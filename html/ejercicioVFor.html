@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="../css/ejercicioVFor.css">
+    <title>Celular</title>
+</head>
+
+<body>
+    <section>
+        <div class="contenedor" id="myCell">
+            <div>
+                <h1>Ingresar Celular</h1>
+                <div class="formulario">
+                    <label>Modelo:</label>
+                    <input type="text" id="modelo" v-model="modelo">
+                    <label>Pantalla:</label>
+                    <input type="text" id="pantalla" v-model="pantalla">
+                    <label>Carga:</label>
+                    <input type="text" id="carga" v-model="carga">
+                    <label>Color:</label>
+                    <input type="text" id="color" v-model="color">
+                    <button @click="agregarCelular()">Ingresar</button>
+                </div>
+            </div>
+            <table class="tabla">
+                <tr>
+                    <th>Modelo</th>
+                    <th>Pantalla</th>
+                    <th>Carga</th>
+                    <th>Color</th>
+                </tr>
+                <tr v-for="celular in listaCelulares">
+                    <td>{{ celular.Modelo }}</td>
+                    <td>{{ celular.Pantalla }}</td>
+                    <td>{{ celular.Carga }}</td>
+                    <td>{{ celular.Color }}</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="../js/ejercicioVFor.js"></script>
+
+</body>
+
+</html>

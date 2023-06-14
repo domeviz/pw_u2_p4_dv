@@ -1,0 +1,63 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formulario {
+  display: grid;
+  background-color: rgb(134, 226, 243);
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input {
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: rgb(123, 100, 237);
+}
+
+h1 {
+  text-align: center;
+  color: rgb(20, 83, 255);
+}
+
+table {
+  margin: 20px;
+  width: 500px;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+td {
+  border: 2px solid plum;
+  height: 20px;
+}
+
+th {
+  border: 2px solid black;
+  background-color: rgb(236, 99, 172);
+}
+
+tr:hover {
+  background-color: pink;
+}

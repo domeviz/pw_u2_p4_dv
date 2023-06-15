@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <script src="../js/calculadoraWeb.js"></script>
+    <link rel="stylesheet" href="../css/calculadoraWeb.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <section>
+        <div id="miCalculadora" class="contenedor">
+            <div class="calculadora">
+                <h1 id="titulo">Calculadora</h1>
+                <input type="text" v-model="consola" id="consola1" disabled>
+                <button @click="limpiar()">Limpiar</button>
+                <button @click="agregarNumero(1)">1</button>
+                <button @click="agregarNumero(2)">2</button>
+                <button @click="agregarNumero(3)">3</button>
+                <button @click="agregarOperacion('+')">+</button>
+                <button @click="agregarNumero(4)">4</button>
+                <button @click="agregarNumero(5)">5</button>
+                <button @click="agregarNumero(6)">6</button>
+                <button @click="agregarOperacion('-')">-</button>
+                <button @click="agregarNumero(7)">7</button>
+                <button @click="agregarNumero(8)">8</button>
+                <button @click="agregarNumero(9)">9</button>
+                <button @click="agregarOperacion('*')">*</button>
+                <button class="cero" @click="agregarNumero(0)">0</button>
+                <button @click="calcularResultado()">=</button>
+                <button @click="agregarOperacion('/')">/</button>
+                <label id="resultado1" for="">Resultado: </label>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

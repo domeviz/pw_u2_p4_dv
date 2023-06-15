@@ -27,8 +27,7 @@ const app = Vue.createApp({
         agregarEstudiante(event){
             console.log('Vamos a agregar')
             const nuevoEstudiante={
-                nombre:this.nombre,
-                apellido: 'Nuevo Apellido'
+                nombre:this.nombre
             }
             //push al final
             //unshift al principio
